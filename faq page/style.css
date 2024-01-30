@@ -1,0 +1,33 @@
+body{
+    background-color: #00ffff;
+    color: #1e1d1d;
+}
+ .faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq-question {
+  margin: 2rem 0;
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e6f605;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq-container {
+    max-width: 90%;
+  }
+}
+

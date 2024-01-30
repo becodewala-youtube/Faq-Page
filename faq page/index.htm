@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-question">
+    <h3 class="question">What is FAQ page?</h3>
+    <p class="answer">FAQ page stands for Frequently Asked Questions page, which is a page on a website that lists the most common questions and answers related to the website or product.</p>
+  </div>
+  <div class="faq-question">
+    <h3 class="question">How does a FAQ page help visitors?</h3>
+    <p class="answer">A FAQ page helps visitors quickly find answers to their questions without having to contact customer support. It can save time for both visitors and support teams, and improve the overall user experience.</p>
+  </div>
+  <!-- Add more FAQ questions here -->
+</div>
+
+<script>
+    const questions = document.querySelectorAll(".question");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    question.nextElementSibling.style.display =
+      question.nextElementSibling.style.display === "block" ? "none" : "block";
+  });
+});
+
+</script>
+	</body>
+</html>
